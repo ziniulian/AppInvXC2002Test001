@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Clear</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0" />
+		<meta charset="utf-8" />
+		<link href="css/s01.css" rel="stylesheet" type="text/css" />
+		<script src="js/rfid.js"></script>
+		<script src="js/check.js"></script>
+		<script src="js/clear.js"></script>
+	</head>
+
+	<body>
+		<div id="boso" class="boso Lc_noadr bg">
+			<div id="homTim" class="home_tim"></div>
+			<div id="appnam" class="check_title mfs">数据清空</div>
+			<div id="content" class="home_body midOut"></div>
+			<div id="dialog" class="Lc_nosee">
+				<div class="midTop"></div><!--
+				--><div class="home_dialog_body midSub">
+					<div class="home_dialog_txt mfs">确定清空数据吗?</div>
+					<div>
+						<div class="home_btn" onclick="dat.hidDialog();"></div><!--
+						--><div class="home_dialog_space"></div><!--
+						--><div class="home_btn home_btn_ok" onclick="dat.del();"></div>
+					</div>
+				</div>
+			</div>
+			<div id="noDialog" class="Lc_nosee">
+				<div class="midTop"></div><!--
+				--><div class="home_dialog_body midSub">
+					<div class="home_dialog_txt mfs">数据已清空</div>
+					<div>
+						<div class="home_btn home_btn_ok" onclick="dat.hidDialog();"></div>
+					</div>
+				</div>
+			</div>
+			<div class="check_del clear_btn" onclick="dat.showDialog();">清空</div>
+			<div id="count" class="check_count mfs"></div>
+			<div class="home_back" onclick="dat.back();"></div>
+		</div>
+	</body>
+
+	<script type="text/javascript">
+		document.body.onload = init;
+	</script>
+</html>

@@ -1,0 +1,511 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DataDic>
+    <!-- Ver2.0 童永成 2017/07/17 综合整理，将车辆，机车，客车的车型、配属局段、制造厂等修整为1个文件 -->
+
+	<VehiclePropertys	Property="A">
+		<!-- 车辆属性 -->
+		<VehicleProperty PropertyCode="K" PropertyName="客车"/>
+		<VehicleProperty PropertyCode="D" PropertyName="动车"/>
+		<VehicleProperty PropertyCode="J" PropertyName="机车"/>
+		<VehicleProperty PropertyCode="T" PropertyName="路用货车"/>
+		<VehicleProperty PropertyCode="!" PropertyName="企业自备车"/>
+		<VehicleProperty PropertyCode="Q" PropertyName="企业自备车"/>
+	</VehiclePropertys>
+	<VehicleTypes	Property="TQ!">
+		<!-- 部属车辆及企业自备车辆的车种代码 -->
+		<VehicleType TypeCode="A" TypeName="预留"/>
+		<VehicleType TypeCode="B" TypeName="冷藏车"/>
+		<VehicleType TypeCode="C" TypeName="敞车"/>
+		<VehicleType TypeCode="D" TypeName="长大货车"/>
+		<VehicleType TypeCode="E" TypeName="预留"/>
+		<VehicleType TypeCode="F" TypeName="预留"/>
+		<VehicleType TypeCode="G" TypeName="罐车"/>
+		<VehicleType TypeCode="H" TypeName="预留"/>
+		<VehicleType TypeCode="I" TypeName="预留"/>
+		<VehicleType TypeCode="J" TypeName="家畜车"/>
+		<VehicleType TypeCode="K" TypeName="矿石车"/>
+		<VehicleType TypeCode="L" TypeName="粮食车"/>
+		<VehicleType TypeCode="M" TypeName="预留"/>
+		<VehicleType TypeCode="N" TypeName="平车"/>
+		<VehicleType TypeCode="O" TypeName="预留"/>
+		<VehicleType TypeCode="P" TypeName="棚车"/>
+		<VehicleType TypeCode="Q" TypeName="预留"/>
+		<VehicleType TypeCode="R" TypeName="预留"/>
+		<VehicleType TypeCode="S" TypeName="守车"/>
+		<VehicleType TypeCode="T" TypeName="特种车"/>
+		<VehicleType TypeCode="U" TypeName="水泥车"/>
+		<VehicleType TypeCode="V" TypeName="预留"/>
+		<VehicleType TypeCode="W" TypeName="毒品车"/>
+		<VehicleType TypeCode="X" TypeName="集装箱车"/>
+		<VehicleType TypeCode="Y" TypeName="预留"/>
+		<VehicleType TypeCode="Z" TypeName="预留"/>
+		<VehicleType TypeCode="NX" TypeName="平集两用车"/>
+	</VehicleTypes>
+
+	<MadeFactorys	Property="TQ!">
+		<!-- 部属车辆及企业自备车辆的制造厂代码 -->
+		<MadeFactory FactoryCode="A" ShortName="齐厂" FactoryName="中国北车集团齐齐哈尔铁路车辆(集团)有限责任公司" />
+		<MadeFactory FactoryCode="B" ShortName="哈厂" FactoryName="中国北车集团哈尔滨车辆厂" />
+		<MadeFactory FactoryCode="C" ShortName="沈厂" FactoryName="中国北车集团沈阳机车车辆有限责任公司" />
+		<MadeFactory FactoryCode="D" ShortName="连厂" FactoryName="中国北车集团大连机车车辆厂" />
+		<MadeFactory FactoryCode="E" ShortName="唐厂" FactoryName="中国北车集团唐山机车车辆厂" />
+		<MadeFactory FactoryCode="F" ShortName="二七厂" FactoryName="中国南车集团北京二七车辆厂" />
+		<MadeFactory FactoryCode="G" ShortName="石厂" FactoryName="中国南车集团石家庄车辆厂" />
+		<MadeFactory FactoryCode="H" ShortName="太厂" FactoryName="中国北车集团太原机车车辆厂" />
+		<MadeFactory FactoryCode="I" ShortName="济厂" FactoryName="中国北车集团济南机车车辆厂" />
+		<MadeFactory FactoryCode="J" ShortName="蒲厂" FactoryName="中国南车集团浦镇车辆厂" />
+		<MadeFactory FactoryCode="K" ShortName="四方厂" FactoryName="中国南车集团四方机车车辆厂" />
+		<MadeFactory FactoryCode="L" ShortName="戚厂" FactoryName="中国南车集团戚墅堰机车车辆厂" />
+		<MadeFactory FactoryCode="M" ShortName="铜陵厂" FactoryName="中国南车集团铜陵车辆厂" />
+		<MadeFactory FactoryCode="N" ShortName="江岸厂" FactoryName="中国南车集团武汉江岸车辆厂" />
+		<MadeFactory FactoryCode="O" ShortName="株洲厂" FactoryName="中国南车集团株洲车辆厂" />
+		<MadeFactory FactoryCode="P" ShortName="柳厂" FactoryName="柳州机车车辆厂" />
+		<MadeFactory FactoryCode="Q" ShortName="洛厂" FactoryName="中国南车集团洛阳机车厂" />
+		<MadeFactory FactoryCode="R" ShortName="广厂" FactoryName="广州铁道车辆厂" />
+		<MadeFactory FactoryCode="S" ShortName="成都厂" FactoryName="中国南车集团成都机车车辆厂" />
+		<MadeFactory FactoryCode="T" ShortName="贵厂" FactoryName="贵州内燃机厂" />
+		<MadeFactory FactoryCode="U" ShortName="眉厂" FactoryName="中国南车集团眉山车辆厂" />
+		<MadeFactory FactoryCode="V" ShortName="贵阳厂" FactoryName="中国南车集团贵阳车辆厂" />
+		<MadeFactory FactoryCode="W" ShortName="西厂" FactoryName="中国南车集团西安车辆厂" />
+		<MadeFactory FactoryCode="X" ShortName="兰厂" FactoryName="兰州车辆厂" />
+		<MadeFactory FactoryCode="Y" ShortName="蒙厂" FactoryName="内蒙一机厂" />
+		<MadeFactory FactoryCode="Z" ShortName="重厂" FactoryName="重庆重型铸锻厂" />
+		<MadeFactory FactoryCode="0" ShortName="晋厂" FactoryName="晋西机械厂" />
+		<MadeFactory FactoryCode="1" ShortName="波兰厂" FactoryName="波兰厂" />
+		<MadeFactory FactoryCode="2" ShortName="波扎斯塔尔厂" FactoryName="波扎斯塔尔厂" />
+		<MadeFactory FactoryCode="3" ShortName="不详" FactoryName="不详" />
+		<MadeFactory FactoryCode="4" ShortName="克留柯夫厂" FactoryName="克留柯夫厂" />
+		<MadeFactory FactoryCode="5" ShortName="阿尔泰厂" FactoryName="阿尔泰厂" />
+		<MadeFactory FactoryCode="6" ShortName="德骚厂" FactoryName="德骚厂" />
+		<MadeFactory FactoryCode="7" ShortName="武厂" FactoryName="中国南车集团武昌车辆厂" />
+		<MadeFactory FactoryCode="8" ShortName="预留" FactoryName="预留" />
+		<MadeFactory FactoryCode="9" ShortName="预留" FactoryName="预留" />
+	</MadeFactorys>
+
+	<RepairSchemes	Property="TQ!">
+		<!-- 部属车辆及企业自备车辆的制造厂代码 -->
+		<RepairScheme RepairCode="B" RepairName="报废"/>
+		<RepairScheme RepairCode="C" RepairName="厂修"/>
+		<RepairScheme RepairCode="D" RepairName="段修"/>
+		<RepairScheme RepairCode="F" RepairName="辅修"/>
+		<RepairScheme RepairCode="L" RepairName="临修"/>
+		<RepairScheme RepairCode="Z" RepairName="轴修"/>
+	</RepairSchemes>
+
+	<VehicleModels	Property="JD">
+		<!-- 动车及机车车型 -->
+		<VehicleModel ModelCode="301" ModelName="CRH1A" Property="D" />
+		<VehicleModel ModelCode="302" ModelName="CRH1B" Property="D" />
+		<VehicleModel ModelCode="303" ModelName="CRH1E" Property="D" />
+		<VehicleModel ModelCode="304" ModelName="CRH2A" Property="D" />
+		<VehicleModel ModelCode="305" ModelName="CRH2B" Property="D" />
+		<VehicleModel ModelCode="306" ModelName="CRH2E" Property="D" />
+		<VehicleModel ModelCode="307" ModelName="CRH2C-1" Property="D" />
+		<VehicleModel ModelCode="308" ModelName="CRH2C-2" Property="D" />
+		<VehicleModel ModelCode="309" ModelName="CRH3C" Property="D" />
+		<VehicleModel ModelCode="310" ModelName="CRH5A" Property="D" />
+		<VehicleModel ModelCode="311" ModelName="CRH380A" Property="D" />
+		<VehicleModel ModelCode="312" ModelName="CRH380AL" Property="D" />
+		<VehicleModel ModelCode="313" ModelName="CRH380B" Property="D" />
+		<VehicleModel ModelCode="314" ModelName="CRH380BL" Property="D" />
+		<VehicleModel ModelCode="315" ModelName="CRH380CL" Property="D" />
+		<VehicleModel ModelCode="316" ModelName="CRH380D" Property="D" />
+		<VehicleModel ModelCode="317" ModelName="CRH380BK" Property="D" />
+		<VehicleModel ModelCode="318" ModelName="CRH6A" Property="D" />
+		<VehicleModel ModelCode="319" ModelName="CRH6F" Property="D" />
+		<VehicleModel ModelCode="320" ModelName="CRH380A综合检测车" Property="D" />
+		<VehicleModel ModelCode="321" ModelName="CRH380B综合检测车" Property="D" />
+        <VehicleModel ModelCode="322" ModelName="CRH5综合检测车" Property="D" />
+		<VehicleModel ModelCode="001" ModelName="JF" Property="J" /> 
+		<VehicleModel ModelCode="003" ModelName="QJ" Property="J" /> 
+		<VehicleModel ModelCode="006" ModelName="KD7" Property="J" /> 
+		<VehicleModel ModelCode="101" ModelName="DF" Property="J" /> 
+		<VehicleModel ModelCode="102" ModelName="DF2" Property="J" /> 
+		<VehicleModel ModelCode="103" ModelName="DF3" Property="J" /> 
+		<VehicleModel ModelCode="104" ModelName="DF4" Property="J" /> 
+		<VehicleModel ModelCode="105" ModelName="DF4k" Property="J" /> 
+		<VehicleModel ModelCode="106" ModelName="DF4c" Property="J" /> 
+		<VehicleModel ModelCode="107" ModelName="DF5" Property="J" /> 
+		<VehicleModel ModelCode="108" ModelName="DF5k" Property="J" /> 
+		<VehicleModel ModelCode="109" ModelName="DF6" Property="J" /> 
+		<VehicleModel ModelCode="110" ModelName="DF7" Property="J" /> 
+		<VehicleModel ModelCode="111" ModelName="DF8" Property="J" /> 
+		<VehicleModel ModelCode="112" ModelName="DF9" Property="J" /> 
+		<VehicleModel ModelCode="113" ModelName="DF10" Property="J" /> 
+		<VehicleModel ModelCode="114" ModelName="DFH1" Property="J" /> 
+		<VehicleModel ModelCode="115" ModelName="DFH2" Property="J" /> 
+		<VehicleModel ModelCode="116" ModelName="DFH3" Property="J" /> 
+		<VehicleModel ModelCode="117" ModelName="DFH5" Property="J" /> 
+		<VehicleModel ModelCode="118" ModelName="BJ" Property="J" /> 
+		<VehicleModel ModelCode="119" ModelName="BJK" Property="J" /> 
+		<VehicleModel ModelCode="120" ModelName="ND2" Property="J" /> 
+		<VehicleModel ModelCode="121" ModelName="ND3" Property="J" /> 
+		<VehicleModel ModelCode="122" ModelName="ND4" Property="J" /> 
+		<VehicleModel ModelCode="123" ModelName="ND5" Property="J" /> 
+		<VehicleModel ModelCode="124" ModelName="NY5" Property="J" /> 
+		<VehicleModel ModelCode="125" ModelName="NY6" Property="J" /> 
+		<VehicleModel ModelCode="126" ModelName="NY7" Property="J" /> 
+		<VehicleModel ModelCode="127" ModelName="QY" Property="J" /> 
+		<VehicleModel ModelCode="128" ModelName="DFH21" Property="J" /> 
+		<VehicleModel ModelCode="129" ModelName="DF7B" Property="J" /> 
+		<VehicleModel ModelCode="130" ModelName="DF5ko" Property="J" /> 
+		<VehicleModel ModelCode="131" ModelName="DF7c" Property="J" /> 
+		<VehicleModel ModelCode="132" ModelName="DF7S" Property="J" /> 
+		<VehicleModel ModelCode="133" ModelName="GK1" Property="J" /> 
+		<VehicleModel ModelCode="134" ModelName="GK1F" Property="J" /> 
+		<VehicleModel ModelCode="135" ModelName="DF4E" Property="J" /> 
+		<VehicleModel ModelCode="136" ModelName="DF7D" Property="J" /> 
+		<VehicleModel ModelCode="137" ModelName="GK1A" Property="J" /> 
+		<VehicleModel ModelCode="138" ModelName="DF11" Property="J" /> 
+		<VehicleModel ModelCode="139" ModelName="TA" Property="J" /> 
+		<VehicleModel ModelCode="140" ModelName="DF10F" Property="J" /> 
+		<VehicleModel ModelCode="141" ModelName="DF4D" Property="J" /> 
+		<VehicleModel ModelCode="142" ModelName="DF8B" Property="J" /> 
+		<VehicleModel ModelCode="143" ModelName="DF12" Property="J" /> 
+		<VehicleModel ModelCode="144" ModelName="DF7E" Property="J" /> 
+		<VehicleModel ModelCode="145" ModelName="NYJ1" Property="J" /> 
+		<VehicleModel ModelCode="146" ModelName="NZJ1" Property="J" /> 
+		<VehicleModel ModelCode="147" ModelName="NZJ2" Property="J" /> 
+		<VehicleModel ModelCode="148" ModelName="DF4DJ" Property="J" /> 
+		<VehicleModel ModelCode="149" ModelName="NDJ1" Property="J" /> 
+		<VehicleModel ModelCode="150" ModelName="NDJ2" Property="J" /> 
+		<VehicleModel ModelCode="151" ModelName="NJ2" Property="J" /> 
+		<VehicleModel ModelCode="152" ModelName="DF7G" Property="J" /> 
+		<VehicleModel ModelCode="156" ModelName="DF11Z" Property="J" /> 
+		<VehicleModel ModelCode="158" ModelName="DF11G" Property="J" /> 
+		<VehicleModel ModelCode="160" ModelName="HXN3" Property="J" /> 
+		<VehicleModel ModelCode="161" ModelName="HXN5" Property="J" /> 
+		<VehicleModel ModelCode="162" ModelName="HXN3B" Property="J" /> 
+		<VehicleModel ModelCode="163" ModelName="HXN5B" Property="J" /> 
+		<VehicleModel ModelCode="201" ModelName="8G" Property="J" /> 
+		<VehicleModel ModelCode="202" ModelName="8K" Property="J" /> 
+		<VehicleModel ModelCode="203" ModelName="6G" Property="J" /> 
+		<VehicleModel ModelCode="204" ModelName="6K" Property="J" /> 
+		<VehicleModel ModelCode="205" ModelName="SS1" Property="J" /> 
+		<VehicleModel ModelCode="206" ModelName="SS3" Property="J" /> 
+		<VehicleModel ModelCode="207" ModelName="SS4" Property="J" /> 
+		<VehicleModel ModelCode="208" ModelName="SS5" Property="J" /> 
+		<VehicleModel ModelCode="209" ModelName="SS6" Property="J" /> 
+		<VehicleModel ModelCode="210" ModelName="SS3B" Property="J" /> 
+		<VehicleModel ModelCode="211" ModelName="SS7" Property="J" /> 
+		<VehicleModel ModelCode="212" ModelName="SS8" Property="J" /> 
+		<VehicleModel ModelCode="213" ModelName="SS7B" Property="J" /> 
+		<VehicleModel ModelCode="214" ModelName="SS7C" Property="J" /> 
+		<VehicleModel ModelCode="215" ModelName="SS6B" Property="J" /> 
+		<VehicleModel ModelCode="216" ModelName="SS9" Property="J" /> 
+		<VehicleModel ModelCode="217" ModelName="SS7D" Property="J" /> 
+		<VehicleModel ModelCode="218" ModelName="DJ" Property="J" /> 
+		<VehicleModel ModelCode="219" ModelName="DJ1" Property="J" /> 
+		<VehicleModel ModelCode="220" ModelName="DJ2" Property="J" /> 
+		<VehicleModel ModelCode="221" ModelName="DJF" Property="J" /> 
+		<VehicleModel ModelCode="222" ModelName="DJJ1" Property="J" /> 
+		<VehicleModel ModelCode="223" ModelName="DJF1" Property="J" /> 
+		<VehicleModel ModelCode="224" ModelName="SS7E" Property="J" /> 
+		<VehicleModel ModelCode="225" ModelName="SSJ3" Property="J" /> 
+		<VehicleModel ModelCode="226" ModelName="SS3C" Property="J" /> 
+		<VehicleModel ModelCode="231" ModelName="HXD1" Property="J" /> 
+		<VehicleModel ModelCode="232" ModelName="HXD2" Property="J" /> 
+		<VehicleModel ModelCode="233" ModelName="HXD3" Property="J" /> 
+		<VehicleModel ModelCode="234" ModelName="HXD1B" Property="J" /> 
+		<VehicleModel ModelCode="235" ModelName="HXD2B" Property="J" /> 
+		<VehicleModel ModelCode="236" ModelName="HXD3B" Property="J" /> 
+		<VehicleModel ModelCode="237" ModelName="HXD1C" Property="J" /> 
+		<VehicleModel ModelCode="238" ModelName="HXD2C" Property="J" /> 
+		<VehicleModel ModelCode="239" ModelName="HXD3C" Property="J" /> 
+		<VehicleModel ModelCode="240" ModelName="HXD1D" Property="J" /> 
+		<VehicleModel ModelCode="242" ModelName="HXD3D" Property="J" /> 
+		<VehicleModel ModelCode="243" ModelName="HXD1F" Property="J" /> 
+		<VehicleModel ModelCode="244" ModelName="HXD2F" Property="J" /> 
+	</VehicleModels>
+        <BelongIns	Property="JD">
+				<!-- 动车检修厂代码及机车配属局段代码 -->
+				<Area AreaCode="21" AreaName="哈尔滨局" Property="D">
+                      <Station StationCode="01" StationName="三棵树车辆段" />
+                      <Station StationCode="11" StationName="哈尔滨西动车所" />
+                </Area>
+                <Area AreaCode="22" AreaName="沈阳局" Property="D">
+                      <Station StationCode="01" StationName="沈阳动车段" />
+                      <Station StationCode="11" StationName="沈阳动车所" />
+                      <Station StationCode="12" StationName="沈阳北动车所" />
+                      <Station StationCode="13" StationName="沈阳南动车所" />
+                      <Station StationCode="14" StationName="长春动车所" />
+                      <Station StationCode="15" StationName="大连动车所" />
+                </Area>
+                <Area AreaCode="23" AreaName="北京局" Property="D">
+                      <Station StationCode="01" StationName="北京动车段" />
+                      <Station StationCode="11" StationName="北京动车所" />
+                      <Station StationCode="12" StationName="北京西动车所" />
+                      <Station StationCode="13" StationName="北京南动车所" />
+                      <Station StationCode="14" StationName="天津动车所" />
+                      <Station StationCode="15" StationName="星火动车所" />
+                      <Station StationCode="16" StationName="丰台动车所" />
+                      <Station StationCode="17" StationName="石家庄动车所" />
+                </Area>
+                <Area AreaCode="24" AreaName="太原局" Property="D">
+                      <Station StationCode="01" StationName="太原车辆段" />
+                      <Station StationCode="11" StationName="太原动车所" />
+                </Area>
+                <Area AreaCode="25" AreaName="呼和浩特局" Property="D">
+                      <Station StationCode="01" StationName="呼和浩特车辆段" />
+                      <Station StationCode="11" StationName="呼和浩特动车所" />
+                </Area>
+                <Area AreaCode="26" AreaName="郑州局" Property="D">
+                      <Station StationCode="01" StationName="郑州车辆段" />
+                      <Station StationCode="11" StationName="郑州动车所" />
+                      <Station StationCode="12" StationName="郑州东动车所" />
+                </Area>
+                <Area AreaCode="27" AreaName="武汉局" Property="D">
+                      <Station StationCode="01" StationName="武汉动车段" />
+                      <Station StationCode="11" StationName="汉口动车所" />
+                      <Station StationCode="12" StationName="武汉动车所" />
+                </Area>
+                <Area AreaCode="28" AreaName="西安局" Property="D">
+                      <Station StationCode="01" StationName="西安车辆段" />
+                      <Station StationCode="11" StationName="西安北动车所" />
+                </Area>
+                <Area AreaCode="29" AreaName="济南局" Property="D">
+                      <Station StationCode="01" StationName="青岛动车段" />
+                      <Station StationCode="11" StationName="青岛动车所" />
+                      <Station StationCode="12" StationName="青岛北动车所" />
+                      <Station StationCode="13" StationName="济南动车所" />
+                </Area>
+                <Area AreaCode="30" AreaName="上海局" Property="D">
+                      <Station StationCode="01" StationName="上海动车客车段" />
+                      <Station StationCode="11" StationName="上海南动车所" />
+                      <Station StationCode="12" StationName="南翔动车所" />
+                      <Station StationCode="13" StationName="虹桥动车所" />
+                      <Station StationCode="14" StationName="杭州动车所" />
+                      <Station StationCode="15" StationName="南京动车所" />
+                      <Station StationCode="16" StationName="南京南动车所" />
+                      <Station StationCode="17" StationName="合肥动车所" />
+                </Area>
+                <Area AreaCode="31" AreaName="南昌局" Property="D">
+                      <Station StationCode="01" StationName="南昌车辆段" />
+                      <Station StationCode="11" StationName="南昌动车所" />
+                      <Station StationCode="11" StationName="南昌西动车所" />
+                      <Station StationCode="02" StationName="福州动车段" />
+                      <Station StationCode="21" StationName="福州动车所" />
+                      <Station StationCode="22" StationName="福州南动车所" />
+                      <Station StationCode="23" StationName="厦门北动车所" />
+                </Area>
+                <Area AreaCode="32" AreaName="广铁集团" Property="D">
+                      <Station StationCode="01" StationName="广州动车段" />
+                      <Station StationCode="11" StationName="广州东动车所" />
+                      <Station StationCode="12" StationName="广州南动车所" />
+                      <Station StationCode="13" StationName="长沙动车所" />
+                      <Station StationCode="14" StationName="三亚动车所" />
+                      <Station StationCode="15" StationName="广珠动车所" />
+                      <Station StationCode="16" StationName="深圳北动车所" />
+                      <Station StationCode="17" StationName="佛山西动车所" />
+                </Area>
+                <Area AreaCode="33" AreaName="南宁局" Property="D">
+                      <Station StationCode="01" StationName="南宁车辆段" />
+                      <Station StationCode="11" StationName="南宁动车所" />
+                </Area>
+                <Area AreaCode="34" AreaName="成都局" Property="D">
+                      <Station StationCode="01" StationName="成都车辆段" />
+                      <Station StationCode="11" StationName="成都东动车所" />
+                      <Station StationCode="12" StationName="重庆北动车所" />
+                      <Station StationCode="13" StationName="重庆西动车所" />
+                      <Station StationCode="14" StationName="贵阳动车所" />
+                </Area>
+                <Area AreaCode="35" AreaName="昆明局" Property="D">
+                      <Station StationCode="01" StationName="昆明车辆段" />
+                      <Station StationCode="11" StationName="昆明南动车所" />
+                </Area>
+                <Area AreaCode="36" AreaName="兰州局" Property="D">
+                      <Station StationCode="01" StationName="兰州车辆段" />
+                      <Station StationCode="11" StationName="兰州动车所" />
+                </Area>
+                <Area AreaCode="37" AreaName="乌鲁木齐局" Property="D">
+                      <Station StationCode="01" StationName="乌鲁木齐车辆段" />
+                      <Station StationCode="11" StationName="乌鲁木齐动车所" />
+                </Area>
+                <Area AreaCode="38" AreaName="青藏铁路公司" Property="D">
+                      <Station StationCode="01" StationName="西宁车辆段" />
+                      <Station StationCode="11" StationName="西宁动车所" />
+                </Area>
+                <Area AreaCode="01" AreaName="哈尔滨局" Property="J" StationNum="6">
+                      <Station StationCode="01" StationName="哈尔滨" />
+                      <Station StationCode="02" StationName="三棵树" />
+                      <Station StationCode="03" StationName="佳木斯" />
+                      <Station StationCode="04" StationName="牡丹江" />
+                      <Station StationCode="05" StationName="齐齐哈尔" />
+                      <Station StationCode="06" StationName="昂昂西" />
+                </Area>
+                <Area AreaCode="02" AreaName="沈阳局" Property="J" StationNum="16">
+                      <Station StationCode="01" StationName="长春" />
+                      <Station StationCode="02" StationName="白城" />
+                      <Station StationCode="03" StationName="大安北" />
+                      <Station StationCode="04" StationName="苏家屯" />
+                      <Station StationCode="05" StationName="沈阳" />
+                      <Station StationCode="06" StationName="沈阳西" />
+                      <Station StationCode="07" StationName="本溪" />
+                      <Station StationCode="08" StationName="大连" />
+                      <Station StationCode="09" StationName="锦州" />
+                      <Station StationCode="10" StationName="山海关" />
+                      <Station StationCode="11" StationName="阜新" />
+                      <Station StationCode="12" StationName="梅河口" />
+                      <Station StationCode="13" StationName="通辽" />
+                      <Station StationCode="14" StationName="赤峰" />
+                      <Station StationCode="15" StationName="吉林" />
+                      <Station StationCode="16" StationName="图们" />
+                </Area>
+                <Area AreaCode="03" AreaName="北京局" Property="J" StationNum="13">
+                      <Station StationCode="01" StationName="北京" />
+                      <Station StationCode="02" StationName="丰台" />
+                      <Station StationCode="03" StationName="南口" />
+                      <Station StationCode="04" StationName="承德" />
+                      <Station StationCode="05" StationName="怀柔北" />
+                      <Station StationCode="06" StationName="丰台西" />
+                      <Station StationCode="07" StationName="唐山" />
+                      <Station StationCode="08" StationName="天津" />
+                      <Station StationCode="09" StationName="石家庄" />
+                      <Station StationCode="10" StationName="邯郸" />
+                      <Station StationCode="11" StationName="磁山" />
+                      <Station StationCode="12" StationName="石力段" />
+                      <Station StationCode="13" StationName="北京西" />
+                </Area>
+                <Area AreaCode="04" AreaName="呼和浩特局" Property="J" StationNum="3">
+                      <Station StationCode="01" StationName="包头西" />
+                      <Station StationCode="02" StationName="呼和浩特" />
+                      <Station StationCode="03" StationName="集宁" />
+                </Area>
+                <Area AreaCode="05" AreaName="郑州局" Property="J" StationNum="4">
+                      <Station StationCode="01" StationName="郑州" />
+                      <Station StationCode="02" StationName="郑州北" />
+                      <Station StationCode="03" StationName="新乡" />
+                      <Station StationCode="04" StationName="洛阳" />
+                </Area>
+                <Area AreaCode="06" AreaName="济南局" Property="J" StationNum="7">
+                      <Station StationCode="01" StationName="济南" />
+                      <Station StationCode="02" StationName="济南西" />
+                      <Station StationCode="03" StationName="衮州" />
+                      <Station StationCode="04" StationName="淄博" />
+                      <Station StationCode="05" StationName="青岛" />
+                      <Station StationCode="06" StationName="徐州" />
+                      <Station StationCode="07" StationName="徐州北" />
+                </Area>
+                <Area AreaCode="07" AreaName="上海局" Property="J" StationNum="9">
+                      <Station StationCode="01" StationName="蚌埠" />
+                      <Station StationCode="02" StationName="合肥" />
+                      <Station StationCode="03" StationName="阜阳" />
+                      <Station StationCode="04" StationName="芜湖" />
+                      <Station StationCode="05" StationName="南京东" />
+                      <Station StationCode="06" StationName="南翔" />
+                      <Station StationCode="07" StationName="上海" />
+                      <Station StationCode="08" StationName="杭州" />
+                      <Station StationCode="09" StationName="金华" />
+                </Area>
+                <Area AreaCode="08" AreaName="南昌局" Property="J" StationNum="6">
+                      <Station StationCode="01" StationName="南昌" />
+                      <Station StationCode="02" StationName="向塘" />
+                      <Station StationCode="03" StationName="赣州" />
+                      <Station StationCode="04" StationName="鹰潭" />
+                      <Station StationCode="05" StationName="福州" />
+                      <Station StationCode="06" StationName="永安" />
+                </Area>
+                <Area AreaCode="09" AreaName="广州局" Property="J" StationNum="7">
+                      <Station StationCode="01" StationName="广州" />
+                      <Station StationCode="02" StationName="韶关" />
+                      <Station StationCode="03" StationName="衡阳" />
+                      <Station StationCode="04" StationName="株洲" />
+                      <Station StationCode="05" StationName="长沙" />
+                      <Station StationCode="06" StationName="娄底" />
+                      <Station StationCode="07" StationName="怀化" />
+                </Area>
+                <Area AreaCode="10" AreaName="柳州局" Property="J" StationNum="4">
+                      <Station StationCode="01" StationName="桂林" />
+                      <Station StationCode="02" StationName="柳州" />
+                      <Station StationCode="03" StationName="玉林" />
+                      <Station StationCode="04" StationName="南宁" />
+                </Area>
+                <Area AreaCode="11" AreaName="" Property="J" StationNum="9">
+                      <Station StationCode="01" StationName="成都" />
+                      <Station StationCode="02" StationName="重庆南" />
+                      <Station StationCode="03" StationName="重庆西" />
+                      <Station StationCode="04" StationName="贵阳" />
+                      <Station StationCode="05" StationName="遵义" />
+                      <Station StationCode="06" StationName="六盘水" />
+                      <Station StationCode="07" StationName="麻尾" />
+                      <Station StationCode="08" StationName="峨嵋" />
+                      <Station StationCode="09" StationName="西昌" />
+                </Area>
+                <Area AreaCode="12" AreaName="昆明局" Property="J" StationNum="3">
+                      <Station StationCode="01" StationName="昆明" />
+                      <Station StationCode="02" StationName="广通" />
+                      <Station StationCode="03" StationName="开远" />
+                </Area>
+                <Area AreaCode="13" AreaName="兰州局" Property="J" StationNum="6">
+                      <Station StationCode="01" StationName="兰州西" />
+                      <Station StationCode="02" StationName="武威南" />
+                      <Station StationCode="03" StationName="银川" />
+                      <Station StationCode="04" StationName="嘉峪关" />
+                      <Station StationCode="05" StationName="迎水桥" />
+                      <Station StationCode="06" StationName="兰州" />
+                </Area>
+                <Area AreaCode="14" AreaName="乌鲁木齐局" Property="J" StationNum="4">
+                      <Station StationCode="01" StationName="哈密" />
+                      <Station StationCode="02" StationName="乌鲁木齐" />
+                      <Station StationCode="03" StationName="库尔勒" />
+                      <Station StationCode="04" StationName="奎屯" />
+                </Area>
+                <Area AreaCode="15" AreaName="青藏铁路公司" Property="J" StationNum="2">
+                      <Station StationCode="01" StationName="西宁" />
+                      <Station StationCode="02" StationName="格尔木" />
+                </Area>
+                <Area AreaCode="16" AreaName="太原局" Property="J" StationNum="7">
+                      <Station StationCode="01" StationName="太原北" />
+                      <Station StationCode="02" StationName="太原" />
+                      <Station StationCode="03" StationName="湖东" />
+                      <Station StationCode="04" StationName="大同" />
+                      <Station StationCode="05" StationName="大同西" />
+                      <Station StationCode="06" StationName="侯马" />
+                      <Station StationCode="07" StationName="介休" />
+                </Area>
+                <Area AreaCode="17" AreaName="武汉局" Property="J" StationNum="5">
+                      <Station StationCode="01" StationName="信阳" />
+                      <Station StationCode="02" StationName="武昌南" />
+                      <Station StationCode="03" StationName="江岸" />
+                      <Station StationCode="04" StationName="襄樊北" />
+                      <Station StationCode="05" StationName="枝江" />
+                </Area>
+                <Area AreaCode="18" AreaName="西安局" Property="J" StationNum="4">
+                      <Station StationCode="01" StationName="西安" />
+                      <Station StationCode="02" StationName="新丰镇" />
+                      <Station StationCode="03" StationName="宝鸡" />
+                      <Station StationCode="04" StationName="安康" />
+                </Area>
+	</BelongIns>
+	<CarVehicleTypes	Property="K">
+		<!-- 部属车辆及企业自备车辆的车种代码 -->
+		<VehicleType TypeCode="RZ" TypeName="软座车"/>
+		<VehicleType TypeCode="YZ" TypeName="硬座车"/>
+		<VehicleType TypeCode="RW" TypeName="软卧车"/>
+		<VehicleType TypeCode="YW" TypeName="硬卧车"/>
+		<VehicleType TypeCode="CA" TypeName="餐车"/>
+		<VehicleType TypeCode="FD" TypeName="发电车"/>
+		<VehicleType TypeCode="KD" TypeName="空调发电车"/>
+		<VehicleType TypeCode="XL" TypeName="行李车"/>
+		<VehicleType TypeCode="UL" TypeName="邮政车"/>
+		<VehicleType TypeCode="YL" TypeName="医疗车"/>
+		<VehicleType TypeCode="WS" TypeName="卫生车"/>
+		<VehicleType TypeCode="WJ" TypeName="文教车"/>
+		<VehicleType TypeCode="GW" TypeName="公务车"/>
+		<VehicleType TypeCode="TZ" TypeName="特种车"/>
+		<VehicleType TypeCode="SY" TypeName="试验车"/>
+		<VehicleType TypeCode="JY" TypeName="救援车"/>
+		<VehicleType TypeCode="GJ" TypeName="轨道检查车"/>
+	</CarVehicleTypes>
+	<CarMadeFactorys	Property="K">
+		<!-- 客车的制造厂代码 ,此代码可能不全-->
+		<MadeFactory FactoryCode="A" ShortName="唐厂" FactoryName="唐山机车车辆厂" />
+		<MadeFactory FactoryCode="B" ShortName="四方厂" FactoryName="四方机车车辆股份公司" />
+		<MadeFactory FactoryCode="C" ShortName="四方公司" FactoryName="四方机车车辆股份有限公司" />
+		<MadeFactory FactoryCode="D" ShortName="成都厂" FactoryName="成都机车车辆厂" />
+		<MadeFactory FactoryCode="E" ShortName="长客厂" FactoryName="长春轨道客车股份有限公司" />
+		<MadeFactory FactoryCode="F" ShortName="长客公司" FactoryName="长春轨道交通设备有限责任公司" />
+		<MadeFactory FactoryCode="G" ShortName="浦厂" FactoryName="南京浦镇车辆厂" />
+		<MadeFactory FactoryCode="H" ShortName="青岛BST" FactoryName="青岛BST" />
+	</CarMadeFactorys>
+</DataDic>

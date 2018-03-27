@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Skin</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0" />
+		<meta charset="utf-8" />
+		<link href="css/s01.css" rel="stylesheet" type="text/css" />
+		<script src="js/rfid.js"></script>
+		<script src="js/skin.js"></script>
+	</head>
+
+	<body>
+		<div class="boso Lc_noadr bg">
+			<div id="homTim" class="home_tim"></div>
+			<div id="appnam" class="check_title mfs">皮肤设置</div>
+			<div class="home_body midOut">
+				<div class="skin_block" onclick="dat.set('s01');">
+					<div class="skin_pic skin_pic_s01"></div>
+					<div id="s01" class="skin_pic_txt skin_pic_txtH">蓝色</div>
+				</div>
+				<div class="skin_block Lc_hid" onclick="dat.set('s02');">
+					<div class="skin_pic skin_pic_s02"></div>
+					<div id="s02" class="skin_pic_txt">绿色</div>
+				</div>
+			</div>
+			<div class="scan_sav" onclick="dat.sav();"></div>
+			<div class="home_back" onclick="dat.back();"></div>
+		</div>
+	</body>
+
+	<script type="text/javascript">
+		document.body.onload = init("s01");
+	</script>
+</html>

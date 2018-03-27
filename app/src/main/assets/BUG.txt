@@ -1,0 +1,11 @@
+﻿V1.0 ：
+
+------- 改版步骤 ------
+LOG.txt 更新版本信息
+BUG.txt 版本修改
+build.gradle(Module:app) 版本修改 ， versionCode ++
+assets/web/js/about.js 版本修改
+
+xc2002/Ma.java 修改 sdDir 属性
+assets/conf.xml 修改 use 属性
+res/values/strings.xml 修改 app_name 属性

@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Home</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0" />
+		<meta charset="utf-8" />
+		<link href="css/s01.css" rel="stylesheet" type="text/css" />
+		<script src="js/rfid.js"></script>
+		<script src="js/home.js"></script>
+	</head>
+
+	<body>
+		<div id="boso" class="boso Lc_noadr bg">
+			<div id="homTim" class="home_tim">00:00</div>
+			<div id="appnam" class="home_title home_title_size"></div>
+			<div class="home_body midOut">
+				<a href="read.html"><div class="home_block home_block_scan">
+					<div class="midTop"></div><!--
+					--><div class="home_block_txt">标签扫描</div>
+				</div></a>
+				<a href="check.html"><div class="home_block home_block_data">
+					<div class="midTop"></div><!--
+					--><div class="home_block_txt">数据管理</div>
+				</div></a>
+				<div class="home_block_space"></div>
+				<a href="clear.html"><div class="home_block home_block_clear">
+					<div class="midTop"></div><!--
+					--><div class="home_block_txt">数据清空</div>
+				</div></a>
+				<a href="javascript: rfid.flashlight();"><div id="fldom" class="home_block home_block_light">
+					<div class="midTop"></div><!--
+					--><div class="home_block_txt">手电筒</div>
+				</div></a>
+				<div class="home_block_space"></div>
+				<a href="about.html"><div class="home_block home_block_about">
+					<div class="midTop"></div><!--
+					--><div class="home_block_txt">关于产品</div>
+				</div></a>
+				<a href="skin.html"><div class="home_block home_block_gps">
+					<div class="midTop"></div><!--
+					--><div class="home_block_txt">皮肤设置</div>
+				</div></a>
+			</div>
+			<div id="exit" class="Lc_nosee">再按一次退出程序</div>
+			<div class="home_back" onclick="dat.back();"></div>
+			<div id="dialog" class="Lc_nosee">
+				<div class="midTop"></div><!--
+				--><div class="home_timDialog_body midSub mfs">
+					<div id="dialog_content" class="home_timDialog_txt"></div>
+					<div>
+						<div class="home_timDialog_btn" onclick="dat.hidDialog();">无需校时</div><!--
+						--><div class="home_dialog_space"></div><!--
+						--><div class="home_timDialog_btn" onclick="dat.callTim();">手动校时</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+	<script type="text/javascript">
+		document.body.onload = init;
+	</script>
+</html>

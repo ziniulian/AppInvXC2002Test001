@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Info</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0" />
+		<meta charset="utf-8" />
+		<link href="css/s01.css" rel="stylesheet" type="text/css" />
+		<script src="js/rfid.js"></script>
+		<script src="js/info.js"></script>
+		<script src="js/infoK.js"></script>
+	</head>
+
+	<body>
+		<div id="boso" class="boso Lc_noadr bg scan_bg_o">
+			<div id="homTim" class="home_tim"></div>
+			<div id="appnam" class="check_title mfs">标签扫描</div>
+			<div id="content" class="scan_info">
+				<div>
+					<div class="scan_key mfs">属&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;性</div><!--
+					--><div class="scan_split mfs">:</div><!--
+					--><div id="pro" class="scan_value mfs"></div>
+				</div>
+				<div>
+					<div class="scan_key mfs">车&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;型</div><!--
+					--><div class="scan_split mfs">:</div><!--
+					--><div id="mod" class="scan_value mfs"></div>
+				</div>
+				<div>
+					<div class="scan_key mfs">车&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;号</div><!--
+					--><div class="scan_split mfs">:</div><!--
+					--><div id="num" class="scan_value mfs"></div>
+				</div>
+				<div>
+					<div class="scan_key mfs">制&nbsp;&nbsp;造&nbsp;&nbsp;厂</div><!--
+					--><div class="scan_split mfs">:</div><!--
+					--><div id="fac" class="scan_value mfs"></div>
+				</div>
+				<div>
+					<div class="scan_key mfs">制造年月</div><!--
+					--><div class="scan_split mfs">:</div><!--
+					--><div id="tim" class="scan_value mfs"></div>
+				</div>
+				<div>
+					<div class="scan_key mfs">端&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码</div><!--
+					--><div class="scan_split mfs">:</div><!--
+					--><div id="pot" class="scan_value mfs"></div>
+				</div>
+				<div>
+					<div class="scan_key mfs">定&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;员</div><!--
+					--><div class="scan_split mfs">:</div><!--
+					--><div id="cap" class="scan_value mfs"></div>
+				</div>
+			</div>
+			<div class="scan_sav" onclick="dat.sav();"></div>
+			<div class="home_back" onclick="dat.back();"></div>
+		</div>
+	</body>
+
+	<script type="text/javascript">
+		document.body.onload = init;
+	</script>
+</html>
